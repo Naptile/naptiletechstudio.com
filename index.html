@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naptile Creative Studio - Home</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-name">
+        <img src="images/logo.png" alt="Logo" />
+        <span>Naptile Creative Studio</span>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- WhatsApp + Language Switcher -->
+      <div style="display: flex; align-items: center;">
+        <a class="whatsapp-btn" href="https://wa.me/254755318914" target="_blank">WhatsApp Chat</a>
+        <select class="language-switcher" onchange="changeLang(this.value)">
+          <option value="en">English</option>
+          <option value="sw">Swahili</option>
+          <option value="es">Spanish</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Empowering Your Business with Futuristic Technology</h1>
+      <p>We deliver creative digital solutions that drive results and help you stay ahead of the competition.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn-primary">Start Your Project</a>
+        <a href="services.html" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US PREVIEW -->
+  <section class="about-preview" data-aos="fade-up">
+    <h2>About Naptile Creative Studio</h2>
+    <p>We are a team of passionate innovators specializing in web development, AI solutions, automation, and digital design for startups, businesses, and enterprises worldwide.</p>
+    <a href="about.html" class="btn-secondary">Learn More</a>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites tailored to your brand and goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>AI Solutions</h3>
+        <p>Harness artificial intelligence to automate and optimize your processes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brand Design</h3>
+        <p>Engaging visual identities that resonate with your audience.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Automation</h3>
+        <p>Streamline workflows and improve efficiency with smart tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us" data-aos="fade-up">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>✅ Innovative Solutions</li>
+      <li>✅ Dedicated Support</li>
+      <li>✅ Affordable Pricing</li>
+      <li>✅ Proven Expertise</li>
+    </ul>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="portfolio-preview" data-aos="fade-up">
+    <h2>Recent Projects</h2>
+    <div class="portfolio-thumbnails">
+      <div class="thumbnail">Project 1</div>
+      <div class="thumbnail">Project 2</div>
+      <div class="thumbnail">Project 3</div>
+    </div>
+    <a href="portfolio.html" class="btn-secondary">View All Projects</a>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+      <blockquote>"Naptile transformed our website and boosted our online presence!"</blockquote>
+      <blockquote>"Professional, reliable, and truly innovative solutions."</blockquote>
+      <blockquote>"Highly recommend them for any tech project."</blockquote>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="call-to-action" data-aos="zoom-in">
+    <h2>Ready to Elevate Your Business?</h2>
+    <a href="contact.html" class="btn-primary">Contact Us Today</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Naptile Creative Studio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Naptile">GitHub</a>
+        <a href="https://www.linkedin.com/in/naptile-peter-01032930b/">LinkedIn</a>
+        <a href="https://x.com/naptile55872">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254755318914" target="_blank" class="floating-whatsapp">💬</a>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+
+    function changeLang(lang) {
+      // You can integrate translation logic here
+      alert("Language changed to: " + lang);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+ body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b0b0c;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+    }
+
+    header {
+      background-color: #0b0b0c;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1a1a1a;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff6600;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: #ff6600;
+      margin: 4px 0;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #0b0b0c;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 1rem 0;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .pricing-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .pricing-section h2 {
+      font-size: 2.5rem;
+      color: #ff6600;
+      margin-bottom: 2rem;
+    }
+
+    .pricing-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 102, 0, 0.5);
+    }
+
+    .card i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ff6600;
+    }
+
+    .card h3 {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #ff6600;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .button {
+      background-color: #ff6600;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e05200;
+    }
+
+    .contact-options {
+      margin-top: 1rem;
+    }
+
+    .contact-options a {
+      margin: 0 5px;
+      color: #ff6600;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-options a:hover {
+      color: white;
+    }
+
+    .payment-icons {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .payment-icons i {
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: #ff6600;
+      transition: transform 0.3s;
+    }
+
+    .payment-icons i:hover {
+      transform: scale(1.2);
+    }

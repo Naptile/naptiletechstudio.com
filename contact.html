@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Naptile Creative Studio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Naptile <span style="color: #ff6600;">Studio</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+        <li><a href="pricing.html" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <select class="lang-switcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="sw">Swahili</option>
+      <option value="es">Spanish</option>
+    </select>
+  </header>
+
+  <section class="hero" data-aos="fade-down">
+    <h1 data-i18n="contact_heading">Contact Us</h1>
+    <p data-i18n="contact_subtext">Let’s bring your ideas to life. We’re here to help!</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-form" data-aos="fade-right">
+      <h2 data-i18n="form_title">Send a Message</h2>
+      <form id="contactForm" method="POST" action="https://formsubmit.co/naptiletechnologies@gmail.com" >
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" data-i18n="send_button">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info" data-aos="fade-left">
+      <h3 data-i18n="get_in_touch">Get in Touch</h3>
+      <p><strong>Email:</strong> <a href="mailto:naptiletechnologies@gmail.com">naptiletechnologies@gmail.com</a></p>
+      <p><strong>Phone:</strong> +254 707 789 021</p>
+      <p><strong>Twitter:</strong> <a href="https://x.com/naptile55872_" target="_blank">@naptile_</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/naptile" target="_blank">github.com/naptile</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/naptile-peter-01032930b/" target="_blank">linkedin.com/in/naptile</a></p>
+    </div>
+  </section>
+
+  <section data-aos="zoom-in">
+    <iframe class="map" src="https://maps.google.com/maps?q=Nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <div class="whatsapp-widget">
+    <a href="https://wa.me/254755318914" target="_blank" title="Chat with us on WhatsApp">💬</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="scripts/contact.js"></script>
+    
+  </script>
+</body>
+</html>
